@@ -1,0 +1,867 @@
+
+.cronos-main-wrapper {
+	width: 1920px;
+	height: 1200px;
+	// background-image: url("../../assets/picture/cronos/main_wrapper_bg.png");
+	background-size: cover;
+	background-color: #2E3643;
+	display: flex;
+	justify-content: center;
+	padding: 27px 0 11px 0;
+	box-sizing: border-box;
+	// flex-wrap: wrap;
+	position: relative;
+	&.light {
+		background-image: url("../../assets/picture/cronos/main_wrapper_bg.png");
+		background-color: #F5F4EF;
+		.cronos-main-container {
+			.header-container {
+				.header-logo {
+					color: #888077;
+				}
+				.header-links-container {
+					.header-links {
+						color: #404040;
+					}
+				}
+			}
+			.left-side-container {
+				.left-side-servers-container {
+					.left-side-server1-container {
+						.name-server {
+							color: #404040;
+						}
+						.status-server {
+							color: #404040;
+						}
+					}
+				}
+				.left-side-discord-container {
+					background-color: #5865F2;
+				}
+				.left-side-vote-container {
+					background-color: #FFFFFF;
+				}
+			}
+			.center-container {
+				.center-line {
+					background-color: #C9C9C9;
+				}
+			}
+			.right-side-container {
+				.right-side-absolute-border {
+					background-color: #C9C9C9;
+				}
+				.right-side-chats-container {
+					.right-side-chats-text {
+						color: #404040;
+					}
+				}
+			}
+		}
+	}
+	&.dark {
+		background-image: url("../../assets/picture/cronos/main_wrapper_bg.png");
+		background-color: #2E3643;
+	}
+	.toggle-theme {
+		position: absolute;
+		right: 5px;
+		top: 0;
+		cursor: pointer;
+		padding: 10px;
+		border: 2px solid rgb(161, 156, 155);
+		border-radius: 10px;
+		background-color: #2E3643;
+		font-family: 'Poppins-Bold';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 16px;
+		color: #C9C9C9;
+		&:hover {
+			background-color: #b5babe;
+			color: #2E3643;
+		}
+	}
+	.cronos-main-container {
+		height: 1149px;
+		width: 1140px;
+		// border: 2px solid white;
+		// border-bottom: 1px solid #C9C9C9;
+		display: flex;
+		flex-wrap: wrap;
+		position: relative;
+		// justify-content: space-between;
+		.absolute-knight {
+			position: absolute;
+			top: 195px;
+			right: 20px;
+			z-index: 999;
+		}
+		.header-container {
+			width: 100%;
+			height: 41px;
+			// border: 2px solid white;
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
+			padding-left: 15px;
+			box-sizing: border-box;
+			margin-bottom: 34px;
+			.header-logo {
+				width: 149px;
+				height: 41px;
+				font-family: 'SPSLOldKingC-Regular';
+				font-style: normal;
+				font-weight: 400;
+				font-size: 33px;
+				line-height: 41px;
+				text-align: center;
+				color: #C9C9C9;
+				margin-right: 44px;
+				.logo-eye {
+					width: 28px;
+					height: 28px;
+					padding: 0 2px;
+				}
+			}
+			.header-links-container {
+				width: 677px;
+				// border: 2px solid white;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				margin-right: 105px;
+				.header-links {
+					font-family: 'Poppins-Bold';
+					font-style: normal;
+					font-weight: 700;
+					font-size: 16px;
+					line-height: 24px;
+					color: #C9C9C9;
+					text-decoration: none;
+				}
+			}
+			.header-flags-container {
+				width: 114px;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				img:first-child {
+					border: 1px solid #857868;
+					width: 20px;
+					height: 20px;
+					border-radius: 50%;
+					}
+				}
+		}
+		.left-side-container {
+			height: 1011px;
+			width: 178px;
+			// border: 2px solid white;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin-right: 30px;
+			.left-side-servers-container {
+				height: 448px;
+				width: 87px;
+				// border: 2px solid white;
+				display: flex;
+				justify-content: space-between;
+				flex-direction: column;
+				align-items: center;
+				margin-bottom: 115px;
+				.left-side-server1-container {
+					width: 87px;
+					height: 124px;
+					display: flex;
+					// border: 2px solid white;
+					// justify-content: center;
+					flex-direction: column;
+					.name-server {
+						font-family: 'Poppins-Bold';
+						font-style: normal;
+						font-weight: 700;
+						font-size: 16px;
+						line-height: 24px;
+						text-align: center;
+						color: #C9C9C9;
+					}
+					.status-server {
+						font-family: 'Poppins-Regular';
+						font-style: normal;
+						font-weight: 400;
+						font-size: 10px;
+						line-height: 15px;
+						text-align: center;
+						color: #C9C9C9;
+					}
+				}
+			}
+			.left-side-discord-container {
+				width: 178px;
+				height: 190px;
+				background: #5C6BC0;
+				border-radius: 10px;
+				// transform: rotate(-180deg);
+				display: flex;
+				justify-content: center;
+				padding: 33px 36px 20px 37px;
+				flex-wrap: wrap;
+				box-sizing: border-box;
+				margin-bottom: 18px;
+				.discord-icon {
+					width: 76px;
+					height: 76px;
+					margin-bottom: 13px;
+				}
+				.discord-text-container {
+					width: 105px;
+					height: 48px;
+					// border: 2px solid white;
+					.discord-text1 {
+						font-family: 'Poppins-Bold';
+						font-style: normal;
+						font-weight: 700;
+						font-size: 16px;
+						line-height: 24px;
+						text-align: center;
+						color: #FFFFFF;
+					}
+					.discord-text2 {
+						font-family: 'Poppins-Regular';
+					font-style: normal;
+					font-weight: 400;
+					font-size: 16px;
+					line-height: 24px;
+					text-align: center;
+					color: #FFFFFF;
+					}
+				}
+			}
+			.left-side-vote-container {
+				width: 178px;
+				height: 190px;
+				// border: 2px solid white;
+				background: #848389;
+				border-radius: 10px;
+				display: flex;
+				flex-wrap: wrap;
+				padding: 15px 18px 12px 18px;
+				box-sizing: border-box;
+				justify-content: center;
+				.vote-text {
+					font-family: 'Poppins-Bold';
+					font-style: normal;
+					font-weight: 700;
+					font-size: 16px;
+					line-height: 24px;
+					text-align: center;
+					text-transform: capitalize;
+					color: #C9C9C9;
+				}
+				.vote-empty-space-container {
+					width: 142px;
+					height: 124px;
+					// border: 2px solid white;
+					display: flex;
+					flex-direction: column;
+					justify-content: space-between;
+					.vote-empty-space {
+						width: 142px;
+						height: 36px;
+						background: #C9C9C9;
+						border-radius: 10px;
+					}
+				}
+			}
+		}
+		.center-container {
+			height: 959px;
+			width: 730px;
+			// border: 2px solid rgb(255, 255, 255);
+			margin-right: 23px;
+			.center-welcome-container {
+				width: 730px;
+				height: 150px;
+				// border: 2px solid white;
+				background-image: url("../../assets/picture/cronos/welcome_img_new.svg");
+				background-size: cover;
+				display: flex;
+				padding-left: 64px;
+				box-sizing: border-box;
+				align-items: center;
+				margin-bottom: 20px;
+				.welcome-text-container {
+					height: 88px;
+					width: 164px;
+					// border: 2px solid white;
+					display: flex;
+					justify-content: space-between;
+					flex-direction: column;
+					margin-right: 28px;
+					.welcome-text1 {
+						font-family: 'Poppins-Bold';
+						font-style: normal;
+						font-weight: 700;
+						font-size: 16px;
+						line-height: 24px;
+						color: #F9F4EE;
+					}
+					.welcome-text2 {
+						font-family: 'Poppins-Bold';
+						font-style: normal;
+						font-weight: 700;
+						font-size: 36px;
+						line-height: 24px;
+						color: #F9F4EE;
+					}
+					.welcome-text3 {
+						font-family: 'Poppins-Regular';
+						font-style: normal;
+						font-weight: 400;
+						font-size: 16px;
+						line-height: 24px;
+						color: #F9F4EE;
+					}
+				}
+				.welcome-img {
+					width: 138px;
+					height: 138px;
+				}
+			}
+			.center-line {
+			width: 710px;
+			height: 1px;
+			background-color: #919191;;
+			margin-bottom: 21px;
+			}
+			.four-elements-container {
+				width: 540px;
+				height: 320px;
+				display: flex;
+				// border: 2px solid white;
+				justify-content: space-between;
+				margin-bottom: 50px;
+				.four-elements-left-side {
+					width: 160px;
+					height: 320px;
+					// border: 2px solid white;
+					display: flex;
+					flex-direction: column;
+					justify-content: space-between;
+					.free-download-container {
+						width: 160px;
+						height: 150px;
+						// border: 2px solid white;
+						background-image: url("../../assets/picture/cronos/free_knight.svg");
+						background-size: cover;
+						background-repeat: no-repeat;
+						background-color: #828282;
+						background-position: 0 12px;
+						position: relative;
+						border-radius: 10px;
+						padding: 11px 56px 100px 8px;
+						box-sizing: border-box;
+						.free-down-load {
+							position: absolute;
+							left: 12px;
+							bottom: 12px;
+						}
+						.free_download_text_container {
+							height: 33px;
+							width: 92px;
+							display: flex;
+							flex-wrap: wrap;
+							.free_download_text1 {
+								font-family: 'Poppins-Bold';
+								font-style: normal;
+								font-weight: 700;
+								font-size: 12px;
+								line-height: 18px;
+								color: #FFFFFF;
+							}
+							.free_download_text2 {
+								font-family: 'Poppins-Medium';
+								font-style: normal;
+								font-weight: 500;
+								font-size: 10px;
+								line-height: 15px;
+								color: #FFFFFF;
+							}
+						}
+					}
+					.game-system-container {
+						width: 160px;
+						height: 150px;
+						background-color: #828282;
+						padding: 15px 61px 103px 20px;
+						box-sizing: border-box;
+						position: relative;
+						background-image: url("../../assets/picture/cronos/free_archer.svg");
+						background-size: cover;
+						background-position: 0px -35px;
+						background-repeat: no-repeat;
+						border-radius: 10px;
+						.free-down-load {
+							position: absolute;
+							left: 12px;
+							bottom: 12px;
+						}
+						.free_download_text_container {
+							height: 33px;
+							width: 87px;
+							display: flex;
+							flex-wrap: wrap;
+							.game-system_text1 {
+								font-family: 'Poppins-Bold';
+								font-style: normal;
+								font-weight: 700;
+								font-size: 12px;
+								line-height: 18px;
+								color: #FFFFFF;
+							}
+							.game-system_text2 {
+								font-family: 'Poppins-Medium';
+								font-style: normal;
+								font-weight: 500;
+								font-size: 10px;
+								line-height: 15px;
+								color: #FFFFFF;
+							}
+						}
+					}
+				}
+				.four-elements-right-side {
+					width: 350px;
+					height: 320px;
+					// border: 2px solid white;
+					display: flex;
+					flex-direction: column;
+					justify-content: space-between;
+					.grand-opening-container {
+						width: 350px;
+						height: 150px;
+						// border: 2px solid white;
+						background-image: url("../../assets/picture/cronos/grand_opening_bg.svg");
+						background-size: cover;
+						background-color: #7B6658;
+						border-radius: 10px;
+						padding: 14px 0 0 19px;
+						box-sizing: border-box;
+						position: relative;
+						.grand-opening-text1 {
+							font-family: 'Poppins-Bold';
+							font-style: normal;
+							font-weight: 700;
+							font-size: 18px;
+							line-height: 27px;
+							color: #F9F4EE;
+						}
+						.grand-opening-text2 {
+							font-family: 'Poppins-Bold';
+							font-style: normal;
+							font-weight: 700;
+							font-size: 40px;
+							line-height: 60px;
+							color: #F9F4EE;
+							position: absolute;
+							top: 31px;
+							left: 19px;
+						}
+						.grand-opening-text3 {
+							font-family: 'Poppins-Medium';
+							font-style: normal;
+							font-weight: 500;
+							font-size: 16px;
+							line-height: 24px;
+							color: #F9F4EE;
+							position: absolute;
+							left: 19px;
+							bottom: 25px;
+						}
+					}
+					.update-in-container {
+						width: 350px;
+						height: 150px;
+						// border: 2px solid white;
+						background-image: url("../../assets/picture/cronos/update-in-content.svg");
+						background-size: cover;
+						border-radius: 10px;
+						position: relative;
+						background-color:  #313538;
+						.update-in-text1 {
+							font-family: 'Poppins-Bold';
+							font-style: normal;
+							font-weight: 700;
+							font-size: 26px;
+							line-height: 39px;
+							text-transform: capitalize;
+							color: #F9F4EE;
+							position: absolute;
+							left: 17px;
+							bottom: 50px;
+						}
+						.update-in-text2 {
+							font-family: 'Poppins-Medium';
+							font-style: normal;
+							font-weight: 500;
+							font-size: 26px;
+							line-height: 39px;
+							text-transform: capitalize;
+							color: #F9F4EE;
+							position: absolute;
+							left: 17px;
+							bottom: 19px;
+						}
+					}
+				}
+			}
+			.best-player-and-forum-container {
+				width: 730px;
+				height: 398px;
+				display: flex;
+				justify-content: space-between;
+				// border: 2px solid white;
+				.best-player-container {
+					width: 350px;
+					height: 398px;
+					// border: 2px solid white;
+					background: #848389;
+					border-radius: 10px;
+					background-image: url("../../assets/picture/cronos/best_player_bg.svg");
+					background-size: 100%;
+					background-repeat: no-repeat;
+					background-position: 0 10px;
+					box-sizing: border-box;
+					display: flex;
+					justify-content: center;
+					flex-wrap: wrap;
+					.best-player-header-container {
+						width: 350px;
+						height: 54px;
+						// border: 2px solid white;
+						display: flex;
+						justify-content: space-between;
+						align-items: center;
+						padding: 0 12px;
+						box-sizing: border-box;
+						border-bottom: 1px solid #AFAFAF;
+						.best-player-header-text {
+							font-family: 'Poppins-Bold';
+							font-style: normal;
+							font-weight: 700;
+							font-size: 16px;
+							line-height: 24px;
+							text-align: center;
+							text-transform: capitalize;
+							color: #FFFFFF;
+						}
+					}
+					.best-player-main-container {
+						width: 350px;
+						height: 243px;
+						// border: 2px solid white;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						padding: 25px 0 12px 0;
+						flex-wrap: wrap;
+						box-sizing: border-box;
+						margin-bottom: 26px;
+						.best-player-line-container {
+							width: 266px;
+							height: 27px;
+							display: flex;
+							justify-content: space-between;
+							align-items: center;
+							position: relative;
+							// border-bottom: 1px solid #919191;
+							// padding-bottom: 5px;
+							// margin-bottom: 5px;
+							.best-player-star {
+								position: absolute;
+								left: -15px;
+							}
+							.best-player-line-text1 {
+								font-family: 'Poppins-Bold';
+								font-style: normal;
+								font-weight: 700;
+								font-size: 14px;
+								line-height: 21px;
+								color: #FFFFFF;
+							}
+							.best-player-line-text2 {
+								font-family: 'Poppins-Medium';
+								font-style: normal;
+								font-weight: 500;
+								font-size: 14px;
+								line-height: 21px;
+								color: #FFFFFF;
+							}
+						}
+						.best-player-line {
+							width: 266px;
+							height: 1px;
+							background-color: #919191;;
+						}
+					}
+					.best-player-btn {
+						width: 266px;
+						height: 38px;
+						border: 2px solid #B8B8B8;
+						border-radius: 10px;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						.best-player-btn-text {
+							font-family: 'Poppins-Bold';
+							font-style: normal;
+							font-weight: 700;
+							font-size: 16px;
+							line-height: 24px;
+							text-align: center;
+							color: #B8B8B8;
+						}
+					}
+				}
+				.forum-container {
+					width: 350px;
+					height: 398px;
+					// border: 2px solid white;
+					background: #848389;
+					box-sizing: border-box;
+					display: flex;
+					justify-content: center;
+					flex-wrap: wrap;
+					border-radius: 10px;
+					padding-bottom: 20px;
+					.forum-header-container {
+						height: 54px;
+						width: 350px;
+						display: flex;
+						align-items: center;
+						// border: 2px solid white;
+						padding-left: 25px;
+						box-sizing: border-box;
+						border-bottom: 1px solid #AFAFAF;
+						.forum-header-text-container {
+							width: 194px;
+							height: 24px;
+							// border: 2px solid white;
+							display: flex;
+							justify-content: space-between;
+							align-items: center;
+							.forum-header-text1 {
+								font-family: 'Poppins-Bold';
+								font-style: normal;
+								font-weight: 700;
+								font-size: 16px;
+								line-height: 24px;
+								text-transform: capitalize;
+								color: #FFFFFF;
+							}
+							.forum-header-text2 {
+								font-family: 'Poppins-Medium';
+								font-style: normal;
+								font-weight: 500;
+								font-size: 12px;
+								line-height: 18px;
+								text-transform: capitalize;
+								color: #C4C4C4;
+							}
+						}
+					}
+					.forum-main-container {
+						height: 271px;
+						width: 350px;
+						display: flex;
+						flex-wrap: wrap;
+						// border: 2px solid white;
+						padding: 17px 25px 0 25px;
+						box-sizing: border-box;
+						margin-bottom: 19px;
+						.forum-line-container {
+							height: 35px;
+							width: 300px;
+							// border: 2px solid white;
+							border-bottom: 1px solid #919191;
+							.forum-line-text1 {
+								width: 100%;
+								// border: 2px solid white;
+								font-family: 'Poppins-Medium';
+								font-style: normal;
+								font-weight: 500;
+								font-size: 12px;
+								line-height: 18px;
+								color: #FFFFFF;
+							}
+							.forum-line-text1-and-text2-container {
+								width: 100%;
+								display: flex;
+								justify-content: space-between;
+								align-items: center;
+								.forum-line-text2 {
+									font-family: 'Poppins-Medium';
+									font-style: normal;
+									font-weight: 500;
+									font-size: 10px;
+									line-height: 15px;
+									color: #B8B8B8;
+								}
+								.forum-line-text3 {
+									font-family: 'Poppins-Medium';
+									font-style: normal;
+									font-weight: 500;
+									font-size: 10px;
+									line-height: 15px;
+									color: #B8B8B8;
+								}
+							}
+						}
+					}
+					.forum-btn {
+						width: 266px;
+						height: 38px;
+						border: 2px solid #B8B8B8;
+						border-radius: 10px;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						.forum-btn-text {
+							font-family: 'Poppins-Bold';
+							font-style: normal;
+							font-weight: 700;
+							font-size: 16px;
+							line-height: 24px;
+							text-align: center;
+							color: #B8B8B8;
+						}
+					}
+				}
+			}
+		}
+		.right-side-container {
+			width: 166px;
+			height: 1011px;
+			// border: 2px solid white;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			position: relative;
+			.right-side-absolute-border {
+				width: 1px;
+				height: 245px;
+				background-color: #919191;
+				position: absolute;
+				left: 10px;
+				top: -10px;
+			}
+			.right-side-top-icons {
+				height: 205px;
+				width: 40px;
+				// border: 2px solid black;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				margin-bottom: 557px;
+			}
+			.right-side-chats-container {
+				width: 89px;
+				height: 87px;
+				// border: 2px solid white;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				align-items: center;
+				.right-side-chats-text {
+					width: 89px;
+					height: 18px;
+					font-family: 'Poppins-Bold';
+					font-style: normal;
+					font-weight: 700;
+					font-size: 12px;
+					line-height: 18px;
+					color: #C9C9C9;
+				}
+			}
+		}
+		.center-footer-line {
+			width: 1140px;
+			height: 1px;
+			background-color: #C9C9C9;
+			margin-bottom: 22px;
+		}
+		.footer-container {
+			width: 1114px;
+			height: 41px;
+			// border: 2px solid white;
+			display: flex;
+			align-items: center;
+			margin-left: 15px;
+			position: relative;
+			.footer-copyright {
+				width: 101px;
+				height: 18px;
+				position: absolute;
+				left: 5px;
+				bottom: -15px;
+
+				font-family: 'Poppins-Regular';
+				font-style: normal;
+				font-weight: 400;
+				font-size: 12px;
+				line-height: 18px;
+				color: #B8B8B8;
+			}
+			.footer-logo {
+				width: 149px;
+				height: 41px;
+				font-family: 'SPSLOldKingC-Regular';
+				font-style: normal;
+				font-weight: 400;
+				font-size: 33px;
+				line-height: 41px;
+				text-align: center;
+				color: #B8B8B8;
+				margin-right: 44px;
+				.logo-eye {
+					width: 28px;
+					height: 28px;
+					padding: 0 2px;
+				}
+			}
+			.footer-four-elements-container {
+				width: 348px;
+				height: 32px;
+				justify-content: space-between;
+				display: flex;
+				align-items: center;
+				// border: 2px solid white;
+				margin-right: 107px;
+				.footer-element {
+					width: 75px;
+					height: 32px;
+					border: 1px solid #B8B8B8;
+					border-radius: 10px;
+				}
+			}
+			.footer-links-container {
+				width: 466px;
+				height: 21px;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				// border: 2px solid white;
+
+				font-family: 'Poppins-Bold';
+				font-style: normal;
+				font-weight: 700;
+				font-size: 14px;
+				line-height: 21px;
+				color: #919191;
+			}
+		}
+	}
+}
